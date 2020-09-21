@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.min.css">
+  <link href="../fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+      <img src="../images/apple_pay_logo_icon_145487.png" alt="logo">
+      <nav >
+        <i id="show-menu" class="fas fa-bars"></i>
+        <ul id="list">
+          <i id="exit" class="fas fa-times"></i>
+          <li id="home"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <section>
+    <div class="container">
+      <img src="../images/ralph.jpg" alt="">
+      <div class="left-container">
+        <h1>You're a Cosmetic <span>Superstar</span></h1>
+        <p>The naval Battle of Lagos took place between a British fleet commanded by Sir Edward Boscawen <br>Gibraltar was undergoing a major refit and left port amidst</p>
+      </div>
+      <div class=icons>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <img src="../images/pc-blue.jpg" alt="">
+    <h2>Browse Beauty</h2>
+  </footer>
+  <script>
+  var showMenu = document.getElementById('show-menu');
+  var list = document.getElementById('list');
+  var exit= document.getElementById('exit');
+  var home= document.getElementById('home');
+
+  showMenu.addEventListener('click',function(){
+     list.classList.add('open-menu');
+     showMenu.classList.add('close-bar');
+  });
+
+  exit.addEventListener('click',function(){
+    list.classList.remove('open-menu');
+    showMenu.classList.remove('close-bar');
+  });
+
+  home.addEventListener('click',function(){
+    list.classList.remove('open-menu');
+    showMenu.classList.remove('close-bar');
+  });
+
+  </script>
+</body>
+</html>
